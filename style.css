@@ -1,0 +1,522 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400;1,500&display=swap');
+ :root{
+    --main-color:rgb(180, 16, 52);
+ }
+  *{
+    font-family: 'Roboto' sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+  }
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  body{
+background-color: white;
+padding-left: 40rem;
+  }
+
+  section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+  }
+
+
+.heading{
+  font-size: 4rem;
+  padding-top: 1rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.heading span{
+  
+  color: rgb(180, 16, 52);
+  text-transform: uppercase;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .8rem 3rem;
+  background-color:rgb(180, 16, 52) ;
+  color: rgb(240, 235, 235);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.btn:hover{
+  background-color: black;
+  letter-spacing: .2rem;
+
+}
+
+  header{
+    position: fixed;
+    top: 0;left:0;
+    bottom: 0;
+    background: black;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+flex-flow: column;
+padding: 8rem 2rem;
+text-align: center;
+width: 40rem;
+
+  }
+
+  header .logo{
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+
+  header .logo span{
+
+    text-transform: uppercase;
+    color:rgb(180, 16, 52);
+
+  }
+  header .navbar a{
+    display: block;
+    font-size: 2.6rem;
+    color: white;
+    margin: 2rem  0;
+  }
+
+  header .navbar a:hover{
+
+    letter-spacing: 1rem;
+    color:rgb(180, 16, 52);
+
+  }
+
+  header .follow a{
+    font-size: 2.8rem;
+    color: white;
+    margin:  0 .7rem;
+
+  }
+  header .follow a:hover{
+    color:rgb(180, 16, 52);
+
+  }
+  #menu-bars{
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    background: rgb(180, 16, 52);
+    color: white;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+   display: none;
+  }
+
+.home{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.home .image{
+  flex: 1 1 40rem;
+}
+
+.home .image img{
+  width: 100%;
+}
+
+
+
+.home .content{
+  flex: 1 1 40rem;
+}
+
+
+.home .content .hi{
+  font-size: 3rem;
+  color:  rgb(180, 16, 52);
+}
+
+.home .content h3{
+  font-size: 3.5rem;
+  color: black;
+  text-transform: uppercase;
+}
+
+.home .content h3 span{
+  color:rgb(180, 16, 52) ;
+  text-transform: uppercase;
+}
+.home .content .info{
+  font-size: 2.5rem;
+  padding: .5rem 0;
+  color: black;
+
+}
+.home .content .text{
+  font-size: 1.7rem;
+  color: #666;
+  padding: .5rem 0;
+}
+
+.about .row-1{
+
+  gap: 4rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .row-1 .image{
+  flex: 1 1 25rem;
+}
+.about .row-1 .image img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+.about .row-1 .content{
+  flex: 1 1 50rem;
+} 
+.about .row-1 .content h3{
+  font-size: 3.6rem;
+  color: #333;
+
+}
+.about .row-1 .content p{
+  font-size: 1.6rem;
+  color: #666;
+  padding: .2rem 0;
+
+}
+.about .row-1 .content .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+}
+.about .row-1 .content .box-container .box{
+flex: 1 1 20rem;
+
+}
+.about .row-1 .content .box-container .box span{
+  color: rgb(180, 16, 52);
+}
+
+#mymail{
+  text-transform: lowercase !important;
+}
+.about .row-2{
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.about .row-2 .skills{
+  flex: 1 1 40rem;
+}
+
+.about .row-2 .progress{
+  padding: 1rem 0;
+}
+.about .row-2 .progress h3{
+font-size: 1.6rem;
+  display: flex;
+  color: black;
+  font-weight: 390;
+  justify-content: space-between;
+  padding: .8rem 0;
+
+
+}
+
+.about .row-2 .progress .bar{
+  background: #c3bbbb;
+  height: 1rem;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 50rem;
+}
+.about .row-2 .progress .bar span{
+  display: block;
+  height: 100%;
+  background:rgb(180, 16, 52) ;
+  border-radius: 50rem;
+}
+.about .row-2 .progress:nth-child(1) .bar span{
+  width: 78%;
+}
+.about .row-2 .progress:nth-child(2) .bar span{
+  width: 60%;
+}
+.about .row-2 .progress:nth-child(3) .bar span{
+  width: 68%;
+}
+.about .row-2 .progress:nth-child(4) .bar span{
+  width: 80%;
+}
+
+
+
+
+.about .row-2 .box-container{
+  flex: 1 1 40rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.about .row-2 .box-container .box{
+  flex: 1 1 15rem;
+  padding: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0.5rem 1rem rgba(0,0,0,.3);
+}
+.about .row-2 .box-container .box h3{
+  color:rgb(180, 16, 52) ;
+  font-size: 3rem;
+
+}
+.about .row-2 .box-container .box p{
+  color: #211d1d;
+  font-size: 1.7rem;
+}
+
+.service .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.service .box-container .box{
+  flex: 1 1 30rem;
+  text-align: center;
+  padding: 2rem;
+  background-color:white;
+  border-radius: 0.5rem;
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.6) ;
+}
+     
+.service .box-container .box i{
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: rgb(180, 16, 52) ;
+  border-radius: 50%;
+}
+.service .box-container .box h3{
+  color: #444;
+  font-size: 2rem;
+  padding-top: .5rem;
+} 
+.service .box-container .box p{
+
+  color: #575353;
+  font-size: 1.7rem;
+  padding-top: .5rem;
+}
+
+.experience .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+}
+
+.experience .box-container .box{
+  position: relative;
+  flex: 1 1 33rem;
+border-left: .2rem solid  rgb(180, 16, 52) ;
+padding-left:2rem;
+padding-top: 2rem;
+padding-bottom: 2rem;
+
+}
+.experience .box-container .box::before{
+content: '';
+position: absolute;
+top: 0;
+left: -1rem;
+height: 2rem;
+width: 2rem;
+border-radius: 50%;
+background: rgb(180, 16, 52)  ;
+
+
+}
+
+.experience .box-container .box .content{
+
+  background: white;
+  padding: 1.5rem;
+  box-shadow: 0 .5 1rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+
+}
+.experience .box-container .box .content span{
+color: #fff;
+font-size: 1.7rem;
+background-color: rgb(180, 16, 52) ;
+border-radius: 50rem;
+padding: .5rem 1rem ;
+
+}
+
+.experience .box-container .box .content h3{
+font-size: 2.5rem;
+padding: .5rem 0;
+color: #111;
+
+}
+
+.experience .box-container .box .content p{
+  font-size: 1.8rem;
+ 
+  color: #333131;
+  
+  }
+
+
+.contact .icons-container{
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+.contact .icons-container .icons{
+  text-align: center;
+  padding: 2rem;
+  flex: 1 1 25rem;
+  background-color: #fff;
+  box-shadow: 0rem .5rem 1rem rgba(0,0,0,.5);
+  border-radius: .5rem;
+}
+.contact .icons-container .icons h3{
+  color: #252424;
+  font-size: 2.5rem;
+  padding-top: .5rem;
+}
+
+.contact .icons-container .icons p{
+  color: #525050;
+  font-size: 1.4rem;
+  padding-top: .5rem;
+  text-transform: lowercase !important;
+}
+
+.contact .icons-container .icons i{
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: rgb(180, 16, 52) ;
+  border-radius: 50%;
+
+}
+
+.contact .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.contact .row form{
+  flex: 1 1 55rem;
+  background: #fff;
+  padding: 0 2rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
+  border-radius: .5rem;
+
+}
+
+.contact .row .map{
+  flex: 1 1 25rem;
+  border: 1rem solid white;
+  box-shadow: 0rem .5rem 1rem rgba(0,0,0,.5);
+  border-radius: .5rem;
+width: 100%;
+}
+.contact .row form .box
+.contact .row form textarea{
+  width: 100%;
+  border-bottom: .1rem solid rgb(13, 12, 12);
+  color: #333;
+  text-transform: none;
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+
+}
+
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+  border-color:rgb(180, 16, 52) ;
+}
+
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder{
+  text-transform: capitalize;
+}
+
+.contact .row form textarea{
+  height: 20rem;
+  resize: none;
+}
+.contact .row form .btn{
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+
+ 
+
+
+  @media(max-width:991px){
+html{
+
+  font-size: 55%;
+}
+
+body{
+  padding: 0;
+}
+#menu-bars{
+  display: initial;
+}
+header{
+  left: -120%;
+}
+header.active{
+  left:0%;
+}
+
+
+  }
+  @media(max-width:450px){
+    html{
+    
+      font-size: 50%;
+    }
+    header{
+      width: 100%;
+    }
+    .experience .box-container .box {
+     
+      padding-left: 0%;
+      }
+  }    
